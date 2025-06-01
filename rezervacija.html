@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rezervirajte mizo v pivnici in piceriji Pr'Starmu Kozlu. Naša rustikalna ambienta in odlična ponudba vas bo očarala.">
+    <meta name="keywords" content="rezervacija, miza, pivnica, picerija, Pr'Starmu Kozlu">
+    <meta name="author" content="Picerija Pr'Starmu Kozlu">
+    <title>Rezervacija | Pr'Starmu Kozlu</title>
+
+    <!-- Vključite Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Povezava na rustikalni CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+    <!-- Zgornji del strani: Header -->
+    <header>
+        <div class="container d-flex justify-content-between align-items-center">
+          <div class="logo">
+            <img src="images/kozel-logo.png" alt="Logo">
+          </div>
+          <input type="checkbox" id="toggle-menu">
+          <label for="toggle-menu" class="menu-icon">&#9776; Meni</label>
+          
+          <nav class="main-menu">
+            <ul>
+              <li><a href="index.html">Domov</a></li>
+              <li><a href="o-nas.html">O nas</a></li>
+              <li><a href="meni.html">Meni</a></li>
+              <li><a href="galerija.html">Galerija</a></li>
+              <li><a href="dogodki.html">Dogodki</a></li>
+              <li><a href="kontakt.html">Kontakt</a></li>
+              <li><a href="novice.html">Novice</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="rezervacija.html">Rezervacija</a></li>
+            </ul>
+          </nav>
+          
+        </div>
+      </header>
+      
+
+    <!-- Rezervacija Sekcija -->
+    <section id="reservation" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Rezervirajte mizo</h2>
+            <p class="text-center">Izpolnite spodnji obrazec za rezervacijo mize v pivnici in piceriji Pr'Starmu Kozlu. Po potrditvi vas bomo kontaktirali za potrditev.</p>
+
+            <!-- Rezervacijski obrazec -->
+            <form action="rezervacija_submit.html" method="POST">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Ime in Priimek</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Telefonska številka</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="date" class="form-label">Datum rezervacije</label>
+                            <input type="date" class="form-control" id="date" name="date" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="time" class="form-label">Čas rezervacije</label>
+                            <input type="time" class="form-control" id="time" name="time" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="guests" class="form-label">Število oseb</label>
+                            <input type="number" class="form-control" id="guests" name="guests" min="1" max="20" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="message" class="form-label">Dodatna sporočila</label>
+                    <textarea class="form-control" id="message" name="message" rows="4"></textarea>
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Pošlji rezervacijo</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Pivnica in Picerija Pr'Starmu Kozlu | Vse pravice pridržane</p>
+        <a href="#intro">Nazaj na začetek</a><br>
+        <a href="pogoji.html">Pogoji uporabe</a> | 
+        <a href="politika-zasebnosti.html">Politika zasebnosti</a>
+    </footer>
+
+    <!-- Vključitev Bootstrap JS in njegovih odvisnosti -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
